@@ -7,16 +7,16 @@ import { Text, View } from 'react-native';
 const Header = (props) => {
     const { textStyle, viewStyle } = styles;
 
-	return (
-		<View style={viewStyle}>
-			<Text style={textStyle}>{props.headerText}</Text>
-		</View>
-	);
+    return (
+        <View style={viewStyle}>
+            <Text style={textStyle}>{props.headerText}</Text>
+        </View>
+    );
 };
 
 
 const styles = {
-	viewStyle: {
+    viewStyle: {
         backgroundColor: '#F8F8F8',
         justifyContent: 'center',
         alignItems: 'center',
@@ -27,11 +27,11 @@ const styles = {
         shadowOpacity: 0.4,
         elevation: 2,
         position: 'relative'
-	},
-	textStyle: {
-		fontSize: 20
-	}
+    },
+    textStyle: {
+        fontSize: 20
+    }
 }
 
 // make the component available to other parts of the app
-export default Header;
+export { Header };
